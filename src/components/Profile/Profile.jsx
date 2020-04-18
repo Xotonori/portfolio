@@ -3,7 +3,7 @@ import classes from './Profile.module.scss'
 
 const Profile = props => {
     return (
-        <div className={classes.Profile}>
+        <div id={props.id} className={`${classes.Profile} ${props.gridWidth}`}>
             Profile
         </div>
     );

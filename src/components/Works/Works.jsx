@@ -3,7 +3,7 @@ import classes from './Works.module.scss'
 
 const Works = props => {
     return (
-        <div className={classes.Works}>
+        <div id={props.id} className={`${classes.Works} ${props.gridWidth}`}>
             Works
         </div>
     );

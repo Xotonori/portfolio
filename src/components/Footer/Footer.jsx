@@ -3,9 +3,9 @@ import classes from './Footer.module.scss'
 
 const Footer = props => {
     return (
-        <div className={classes.Footer}>
+        <footer id={props.id} className={`${classes.Footer} ${props.gridWidth}`}>
             Footer
-        </div>
+        </footer>
     );
 };
 

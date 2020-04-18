@@ -3,7 +3,7 @@ import classes from './Skills.module.scss'
 
 const Skills = props => {
     return (
-        <div className={classes.Skills}>
+        <div id={props.id} className={`${classes.Skills} ${props.gridWidth}`}>
             Skills
         </div>
     );

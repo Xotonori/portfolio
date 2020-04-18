@@ -3,7 +3,7 @@ import classes from './Remote.module.scss'
 
 const Remote = props => {
     return (
-        <div className={classes.Remote}>
+        <div id={props.id} className={`${classes.Remote} ${props.gridWidth}`}>
             Remote
         </div>
     );

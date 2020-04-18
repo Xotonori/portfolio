@@ -1,0 +1,10 @@
+.item {
+  text-decoration: none;
+  color: #ECF0F1;
+  transition: color .2s ease-in;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: #F1C40F;
+}

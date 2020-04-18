@@ -1,4 +1,17 @@
 .Header {
-  background-color: #b6e5ff;
-  display: grid;
+  background-color: #2C3E50;
+  grid-area: header;
+  grid-template-rows: 15px 30px 15px;
 }
+
+.navigation {
+  grid-column: 7 / 12;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(70px, 1fr));
+  align-items: center;
+  justify-items: center;
+
+}
+
+
