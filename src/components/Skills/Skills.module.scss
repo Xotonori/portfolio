@@ -1,4 +1,9 @@
 .Skills {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: center;
   background-color: #b6e5ff;
-  grid-area: skills;
+
 }

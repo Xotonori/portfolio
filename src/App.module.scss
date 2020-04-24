@@ -1,23 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
-.App {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
-  grid-template-areas:
-  'header'
-  'profile'
-  'skills'
-  'works'
-  'remote'
-  'contacts'
-  'footer';
-  font-family: 'Oswald', sans-serif;
-  height: 600vh;
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.gridProjectWidth {
-  display: grid;
-  grid-template-columns: minmax(2px, 1fr)  repeat(10, minmax(16px, 1fr)) minmax(2px, 1fr);
+.App {
+  font-family: 'Oswald', sans-serif;
+  color: #ECF0F1;
+}
+
+.projectWidth {
+  padding: 0 8%;
 }

@@ -10,18 +10,15 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
 
-
-
-
     return (
     <div className={classes.App}>
-      <Header id='header' gridWidth={classes.gridProjectWidth}/>
-      <Profile id='profile' gridWidth={classes.gridProjectWidth}/>
-      <Skills id='skills' gridWidth={classes.gridProjectWidth}/>
-      <Works id='works' gridWidth={classes.gridProjectWidth}/>
-      <Remote id='remote' gridWidth={classes.gridProjectWidth}/>
-      <Contacts id='contacts' gridWidth={classes.gridProjectWidth}/>
-      <Footer id='footer' gridWidth={classes.gridProjectWidth}/>
+      <Header id='header' projectWidth={classes.projectWidth}/>
+      <Profile id='profile' projectWidth={classes.projectWidth}/>
+      <Skills id='skills' projectWidth={classes.projectWidth}/>
+      <Works id='works' projectWidth={classes.projectWidth}/>
+      <Remote id='remote' projectWidth={classes.projectWidth}/>
+      <Contacts id='contacts' projectWidth={classes.projectWidth}/>
+      <Footer id='footer' projectWidth={classes.projectWidth}/>
     </div>
   );
 }

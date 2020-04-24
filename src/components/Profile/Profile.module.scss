@@ -1,4 +1,22 @@
 .Profile {
   background-color: #ffb3bb;
-  grid-area: profile;
+  height: 100vh;
+  display: grid;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15%;
+    justify-items: center;
+    align-items: center;
+
+    .title {
+      padding: 10px;
+    }
+
+    .photo {
+      justify-self: left;
+      height: 400px;
+    }
+  }
 }
