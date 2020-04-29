@@ -1,4 +1,19 @@
-.Works {
+.wrapWorks {
+  display: grid;
   background-color: #ffb3bb;
-  grid-area: works;
+  grid-row-gap: 25px;
+  padding: 100px 0;
+
+
+  .title {
+    text-align: center;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-items: center;
+    align-items: center;
+    user-select: none;
+  }
 }

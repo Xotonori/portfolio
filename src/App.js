@@ -9,7 +9,6 @@ import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-
     return (
     <div className={classes.App}>
       <Header id='header' projectWidth={classes.projectWidth}/>
