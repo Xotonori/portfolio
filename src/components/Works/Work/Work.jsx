@@ -1,34 +1,44 @@
-import React from 'react'
+import React, {useState} from 'react'
 import classes from './Work.module.scss'
+import './option.css'
 import Button from "../../Button/Button";
-import styled, { keyframes } from 'styled-components';
-import { fadeIn } from 'react-animations';
+import {TransitionGroup, CSSTransition} from 'react-transition-group'
 
 const Work = props => {
+    const [isVisible, setIsVisible] = useState(false);
 
-    const Bounce = styled.div`animation: 1s ${keyframes`${fadeIn}`} `;
 
     return (
         <div className={classes.work}>
-            <div className={classes.showWork}>
-                <Bounce>
-                    <div className={classes.dimmingBlock}>
-                        <div className={`${classes.wrapButton} ${classes.topWrapButton}`}>
-                            <a href="#">
-                                <Button name={'Смотреть'}/>
-                            </a>
-                        </div>
-                        <div className={`${classes.wrapButton} ${classes.bottomWrapButton}`}>
-                            <a href="#">
-                                <Button name={'Github'}/>
-                            </a>
-                        </div>
-                    </div>
-                </Bounce>
 
+                <TransitionGroup className={classes.showWork} onMouseOver={()=>setIsVisible(true)} onMouseLeave={()=>setIsVisible(false)}>
+                    {isVisible && (
 
+                        <CSSTransition
+                            classNames={'option'}
+                            timeout={300}
+                        >
 
-            </div>
+                            <div className={classes.wrapperDimmingBlock}>
+                                <div className={classes.dimmingBlock}>
+                                    <div className={`${classes.wrapButton} ${classes.topWrapButton}`}>
+                                        <a href="#">
+                                            <Button name={'Смотреть'}/>
+                                        </a>
+                                    </div>
+                                    <div className={`${classes.wrapButton} ${classes.bottomWrapButton}`}>
+                                        <a href="#">
+                                            <Button name={'Github'}/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </CSSTransition>
+
+                    )}
+                </TransitionGroup>
+
             <div>
                 <h3>Название проетка</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur
@@ -40,5 +50,3 @@ const Work = props => {
 };
 
 export default Work;
-
-// style={{backgroundImage: props.bImageUrl}}

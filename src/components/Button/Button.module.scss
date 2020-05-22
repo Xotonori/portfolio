@@ -7,10 +7,15 @@
   color: #ECF0F1;
   font-family: 'Oswald', sans-serif;
   cursor: pointer;
-  transition: color .5s;
-}
+  transition: color .5s, background-color .3s;
+  outline: none;
 
-.Button:hover {
-  color: #F1C40F;
-}
+  &:hover {
+    color: #F1C40F;
 
+  }
+
+  &:active {
+    background-color: #223244;
+  }
+}

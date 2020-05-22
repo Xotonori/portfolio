@@ -1,0 +1,29 @@
+/*appear*/
+/*.option-appear {*/
+    /*opacity: 0;*/
+/*}*/
+
+/*.option-appear.option-appear-active {*/
+    /*opacity: .9;*/
+    /*transition: opacity .3s ease;*/
+/*}*/
+
+/*enter*/
+.option-enter {
+    opacity: 0;
+}
+
+.option-enter.option-enter-active {
+    opacity: .9;
+    transition: opacity .3s linear;
+}
+
+/*exit*/
+.option-exit {
+    opacity: .9;
+}
+
+.option-exit.option-exit-active {
+    opacity: 0;
+    transition: opacity .3s linear;
+}

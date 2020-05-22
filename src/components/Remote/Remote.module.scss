@@ -1,3 +1,16 @@
 .Remote {
+  display: grid;
+  justify-items: center;
   background-color: #b6e5ff;
+  padding: 100px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  button {
+    width: 150px;
+    font-size: 18px;
+  }
 }
