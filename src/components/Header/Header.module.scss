@@ -1,26 +1,67 @@
+@import "../../App";
+
 .Header {
-  width: 84%;
-  background-color: #2C3E50;
+  width: 88%;
+  padding: 50px 6%;
+  background-color: rgba(0,0,0,.7);
   position: fixed;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+
+  .phone {
+    font-family: 'MontDemo-Heavy', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #009589 0%, #017da4 25%, #5b2fa7 50%, #017da4 75%, #009589 100%);
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    letter-spacing: 1.2px;
+    transition: all 2s;
+  }
 
   .navigation {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(70px, 1fr));
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-items: center;
+    font-size: 14px;
 
     .item {
-      padding: 10px;
+      position: relative;
       text-decoration: none;
-      color: #ECF0F1;
+      color: $fontColor;
       transition: color .2s ease-in;
       cursor: pointer;
+      white-space: nowrap;
+      letter-spacing: .5px;
+
+      &:not(:last-of-type) {
+        margin-right: 7%;
+      }
+
+      &:after {
+        position: absolute;
+        bottom: -11px;
+        left: -10%;
+        background: linear-gradient(90deg, #009589 0%, #017da4 49%, #5b2fa7 100%);
+        display: block;
+        content: "";
+        height: 5px;
+        width: 0;
+        transition: width .3s ease-in-out;
+      }
+
+      &:hover:after,
+      &:focus:after {
+        width: 120%;
+      }
+
     }
 
-    .item:hover {
-      color: #F1C40F;
-    }
+
+
   }
 }
 

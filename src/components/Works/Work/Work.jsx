@@ -1,12 +1,11 @@
 import React, {useState} from 'react'
 import classes from './Work.module.scss'
-import './option.css'
+import './dimmingOption.css'
 import Button from "../../Button/Button";
 import {TransitionGroup, CSSTransition} from 'react-transition-group'
 
 const Work = props => {
     const [isVisible, setIsVisible] = useState(false);
-
 
     return (
         <div className={classes.work}>
@@ -15,7 +14,7 @@ const Work = props => {
                     {isVisible && (
 
                         <CSSTransition
-                            classNames={'option'}
+                            classNames={'dimmingOption'}
                             timeout={300}
                         >
 

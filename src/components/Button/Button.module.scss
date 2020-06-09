@@ -1,17 +1,19 @@
+@import "../../App";
+
 .Button {
   min-width: 100px;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #2C3E50;
-  color: #ECF0F1;
+  background-color: $darkBlue;
+  color: $fontColor;
   font-family: 'Oswald', sans-serif;
   cursor: pointer;
   transition: color .5s, background-color .3s;
   outline: none;
 
   &:hover {
-    color: #F1C40F;
+    color: $activeFontColor;
 
   }
 

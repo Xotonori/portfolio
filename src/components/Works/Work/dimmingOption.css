@@ -9,21 +9,21 @@
 /*}*/
 
 /*enter*/
-.option-enter {
+.dimmingOption-enter {
     opacity: 0;
 }
 
-.option-enter.option-enter-active {
+.dimmingOption-enter.dimmingOption-enter-active {
     opacity: .9;
     transition: opacity .3s linear;
 }
 
 /*exit*/
-.option-exit {
+.dimmingOption-exit {
     opacity: .9;
 }
 
-.option-exit.option-exit-active {
+.dimmingOption-exit.dimmingOption-exit-active {
     opacity: 0;
     transition: opacity .3s linear;
 }
